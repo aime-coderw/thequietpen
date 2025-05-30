@@ -142,6 +142,25 @@
 .signout-button:hover {
   background-color: #7a6f63;
 }   
+    .whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  font-size: 28px;
+  padding: 12px;
+  border-radius: 50%;
+  text-align: center;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}
+
+.whatsapp-icon:hover {
+  transform: scale(1.1);
+}
+
   </style>
 </head>
 <body>
@@ -229,7 +248,10 @@
     </p>
     <p>&copy; 2025 The Quiet Pen. All rights reserved.</p>
   </div>
-  <button class="signout-button" onclick="signOut()">Sign Out</button>
+  <a href="https://whatsapp.com/channel/0029VaFfMpI8SN4ixYkI5Q1P" target="_blank" class="whatsapp-icon">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
   const SUPABASE_URL = 'https://zzsucwdtcgqzlheqnjbm.supabase.co';
