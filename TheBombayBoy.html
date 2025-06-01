@@ -1,0 +1,227 @@
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Quiet Pen-The Bombay Boy</title>
+   <link rel="icon" type="image/png" href="favicon.png" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background-color: #f9f7f1;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      padding: 1rem;
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    header img {
+      height: 50px;
+      margin-right: 1rem;
+      justify-content: center;
+    }
+    header h1 {
+      font-size: 1.5rem;
+      color: #5a4a3e;
+      margin: 0;
+      justify-content: center;
+    }
+    nav {
+      background-color: #5a4a3e;
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 0.5rem;
+      gap: 1rem;
+
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0.5rem 1rem;
+      font-weight: bold;
+    
+    }
+    .section {
+      padding: 1.5rem;
+      text-align: left;
+      background-color: #FFFFFF;
+    }
+    .section h2 {
+      color: #5a4a3e;
+      margin-bottom: 1rem;
+      background-color: #FFFFFF;
+    }
+    
+    .story-grid {
+      display: flex;
+      gap: 1rem;
+      justify-content: center; 
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .story-card {
+        text-margin: 2px;
+      position: relative; 
+      background-color: white;
+      border-radius: 5px;
+      padding: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 700px;
+      cursor: pointer;
+    }
+    .story-card img {
+      width: 100%;
+      border-radius: 2px;
+    }
+    .footer {
+      background-color: #5a4a3e;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .footer a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+       nav {
+    flex-direction: row;
+    align-items: left;
+    flex-wrap: wrap;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+      .story-card{
+    min-width: 220px; /* smaller on mobile */
+    font-size: 0.9rem; /* optional: reduce text size */
+    padding: 0.6rem;
+  }
+
+  .story-grid {
+    padding: 0rem
+
+  }
+      h1{
+        font-size: 1.5rem;
+      }
+    }
+    .mybutton {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 0.5rem 1rem;
+  background-color: #5a4a3e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+    }
+    .signout-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #5a4a3e;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: background-color 0.3s;
+}
+
+.signout-button:hover {
+  background-color: #7a6f63;
+}  
+    .simple-whatsapp-button {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.simple-whatsapp-button a {
+  display: inline-block;
+  background-color: #222;
+  color: #fff;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  border: 2px solid #444;
+  transition: all 0.3s ease;
+}
+
+.simple-whatsapp-button a:hover {
+  background-color: #fff;
+  color: #222;
+  border-color: #222;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Header with logo -->
+  <header>
+    <img src="The_Quiet_Pen_Logo_Design.png" alt="The Quiet Pen Logo">
+    <h1>The Quiet Pen</h1>
+  </header>
+  <!-- Navigation / Genres -->
+  <nav>
+    <a href="TheBombayBoy.html">Chapter 1</a>
+    <a href="TheBombayBoy2.html">Chapter 2</a>
+    <a href="TheBombayBoy3.html">Chapter 3</a>
+    <a href="TheBombayBoy4.html">Chapter 4</a>
+        <a href="TheBombayBoy5.html">Chapter 5</a>
+    <a href="TheBombayBoy6.html">Chapter 6</a>
+
+
+  </nav>
+<h1 style="text-align:center;">The Bombay Boy</h1>
+  <!-- Latest Stories -->
+  <section class="section">
+    <div class="story-grid">
+      <div class="story-card">
+        <h3 style="text-align:center;">Chapter 1</h3>
+<p>Charles and his two brothers were raised by their father alone. Their mother left them when they were still very young. She ran off with a rich man, leaving their father to handle everything by himself. Being an orphan, he had no relatives to lean on. Life was not easy, but he tried his level best to make sure his children didn’t lack the basics.</p>
+        <p>He didn’t have a good job that paid well. He used to work as a casual labourer in the market — helping people to carry their loads, offloading goods from lorries to shops, and doing other small jobs just to earn something. Because of his love for his children, he chose not to marry again. He said he would rather struggle alone than bring another woman into the house who might not love his children.</p>
+<p>Somehow, life moved on. The children started school, and the father did his best to pay for their primary education. But money was always tight. When Charles finished primary school, his father couldn’t manage to pay for secondary school fees.</p>
+<p>With no other option, Charles joined his father in the same work. He was still very young — only 14 years — but he had a big dream of becoming a successful man one day. He didn't know how or when, but he believed that his time would come.</p>
+<p>Then one day, everything changed.</p>
+<p>Charles received terrible news: his father had fallen seriously ill and had been rushed to the hospital. Many tests were done, but doctors couldn’t find the problem. He was later transferred to a bigger hospital, and after further examination, they found that he had suffered a heart attack. His heart had become too weak to support his body properly.</p>
+<p>The doctors said the only solution was a heart transplant.</p>
+<p>Upon hearing the news, Charles and his brothers thought the situation was manageable. But when the doctor mentioned the cost of treatment, everything changed. The silence in the room broke, and reality hit them hard — the heart transplant would cost two million dollars.</p>
+<p>They lost hope instantly, their father wasn’t being able to live longer.</p>
+
+                                        <p style="text-align:center;"> *********************************** </p> </section> 
+    <div class="simple-whatsapp-button">
+  <a href="https://whatsapp.com/channel/0029Vb62zQVAu3aPIR2jp51g" target="_blank">
+    🔔 Join For New Updates
+  </a>
+</div>
+    
+    </div> </div>
+    <div class="footer">
+    <p>Contact us: <a href="mailto:aimemeddy25@gmail.com">Mail Us</a></p>
+    <p>
+      <a href="https://wa.me/250791231993" target="_blank">WhatsApp</a> |
+      <a href="https://www.instagram.com/thequietpenrw" target="_blank">Instagram</a> |
+      <a href="https://twitter.com/thequietpenrw" target="_blank">Twitter</a>
+    </p>
+    <p>&copy; 2025 The Quiet Pen. All rights reserved.</p>
+  </div>   <button class="signout-button" onclick="location.href='home.html'">Return To Home</button>
+  </body></html>
