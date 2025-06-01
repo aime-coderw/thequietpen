@@ -137,6 +137,39 @@
 .whatsapp-icon:hover {
   transform: scale(1.1);
 }
+#downloadAppButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #4A00E0, #8E2DE2);
+  color: #fff;
+  padding: 14px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 9999;
+  transition: all 0.3s ease;
+}
+
+#downloadAppButton:hover {
+  background: linear-gradient(135deg, #3a00c9, #7613d9);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+#downloadAppButton .icon {
+  font-size: 20px;
+  line-height: 1;
+}
+
+#downloadAppButton .label {
+  display: inline-block;
+}
 
 
   </style>
@@ -227,7 +260,8 @@
     <p>&copy; 2025 The Quiet Pen. All rights reserved.</p>
   </div>
   <a href="https://github.com/aime-coderw/thequietpen/releases/download/v1.0.0/The.Quiet.Pen.apk" download id="downloadAppButton" title="Mobile App"> 
- <button>Mobile-Ap</button>p</a>
+  <span class="icon">⬇️</span>
+  <span class="label">Download App</span></a>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
