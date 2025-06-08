@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>New Bottle, Same Juice – The Quiet Pen</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
   <style>
     body {
       font-family: 'Inter', sans-serif;
@@ -73,6 +78,40 @@
 
     <p><strong>Ask yourself:</strong> Have I changed only on the outside, or has God really changed my heart?</p>
   </div>
+<!-- Social Share Buttons -->
+<div style="display:flex; gap:12px; font-family: Arial, sans-serif; margin: 15px 0;">
+
+  <a id="whatsapp-share" href="#" target="_blank" rel="noopener noreferrer"
+     style="background:#25D366; color:#fff; padding:10px 16px; border-radius:6px; font-weight:bold; text-decoration:none; display:flex; align-items:center; gap:8px;">
+    <i class="fab fa-whatsapp" style="font-size:18px;"></i> WhatsApp
+  </a>
+
+  <a id="facebook-share" href="#" target="_blank" rel="noopener noreferrer"
+     style="background:#3b5998; color:#fff; padding:10px 16px; border-radius:6px; font-weight:bold; text-decoration:none; display:flex; align-items:center; gap:8px;">
+    <i class="fab fa-facebook-f" style="font-size:18px;"></i> Facebook
+  </a>
+
+  <a id="twitter-share" href="#" target="_blank" rel="noopener noreferrer"
+     style="background:#1da1f2; color:#fff; padding:10px 16px; border-radius:6px; font-weight:bold; text-decoration:none; display:flex; align-items:center; gap:8px;">
+    <i class="fab fa-twitter" style="font-size:18px;"></i> Twitter
+  </a>
+
+  <a id="linkedin-share" href="#" target="_blank" rel="noopener noreferrer"
+     style="background:#0077b5; color:#fff; padding:10px 16px; border-radius:6px; font-weight:bold; text-decoration:none; display:flex; align-items:center; gap:8px;">
+    <i class="fab fa-linkedin-in" style="font-size:18px;"></i> LinkedIn
+  </a>
+
+</div>
+
+<script>
+  const pageUrl = encodeURIComponent(window.location.href);
+  const message = encodeURIComponent("Check out this inspiring blog post: ");
+
+  document.getElementById('whatsapp-share').href = `https://wa.me/?text=${message}${pageUrl}`;
+  document.getElementById('facebook-share').href = `https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`;
+  document.getElementById('twitter-share').href = `https://twitter.com/intent/tweet?text=${message}&url=${pageUrl}`;
+  document.getElementById('linkedin-share').href = `https://www.linkedin.com/sharing/share-offsite/?url=${pageUrl}`;
+</script>
 
   <footer>
     <p>&copy; 2025 The Quiet Pen | All rights reserved | Designed to glorify God</p>
