@@ -136,24 +136,29 @@
 
 </div>
   </div>
-  <!-- Disqus Comment Section -->
-<div id="disqus_thread"></div>
-<script>
-  var disqus_config = function () {
-    this.page.url = window.location.href;  
-    this.page.identifier = window.location.pathname; 
-  };
+<!-- Quiet Comment / Prayer Form -->
+<form name="comment" method="POST" data-netlify="true" style="max-width: 600px; margin: 2rem auto; padding: 1.5rem; background-color: #f9f9f9; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+  <h3 style="text-align:center;">💬 Leave a Comment or Prayer Request</h3>
 
-  (function () {  
-    var d = document, s = d.createElement('script');  
-    s.src = 'https://thequietpen.disqus.com/embed.js';  
-    s.setAttribute('data-timestamp', +new Date());  
-    (d.head || d.body).appendChild(s);  
-  })();
-</script>
-<noscript>Please enable JavaScript to view the 
-  <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-</noscript>
+  <p>
+    <label for="name">Your Name:<br>
+      <input type="text" name="name" id="name" required style="width: 100%; padding: 8px; margin-top: 4px; border: 1px solid #ccc; border-radius: 6px;">
+    </label>
+  </p>
+
+  <p>
+    <label for="message">Your Message:<br>
+      <textarea name="message" id="message" rows="5" required style="width: 100%; padding: 8px; margin-top: 4px; border: 1px solid #ccc; border-radius: 6px;"></textarea>
+    </label>
+  </p>
+
+  <p style="text-align:center;">
+    <button type="submit" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 8px; cursor: pointer;">
+      Send
+    </button>
+  </p>
+</form>
+
 
 <script>
   const pageUrl = encodeURIComponent(window.location.href);
