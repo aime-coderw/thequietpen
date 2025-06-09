@@ -51,6 +51,20 @@
       font-size: 0.9rem;
       margin-top: 3rem;
     }
+       .button {
+      display: inline-block;
+      padding: 0.5rem 1.2rem;
+      margin-top: 1rem;
+      background-color: #384d91;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      
+    }
+    .button:hover {
+      background-color: #2c3b73;
+    }
   </style>
 </head>
 <body>
@@ -79,9 +93,29 @@
 
     <h2>There Is More Ahead</h2>
     <p>You are not your past. You are not your failure. You are not your depression. You are a soul loved by God, chosen for His purpose, and invited into something eternal.</p>
+<div style="margin-top: 2rem;">
+  <h2>Closing Words of Hope</h2>
+  <p>
+    Even when it feels like all hope is gone, God has not abandoned you. His presence is closest in the darkest places. When you cannot see the way forward, He becomes your way. Don’t let the silence of your pain deceive you — God is still working, still loving, and still calling you to Himself.
+  </p>
+
+  <h3>A Prayer for the Hopeless:</h3>
+  <blockquote style="font-style: italic; background-color: #f9f9f9; padding: 1rem; border-left: 4px solid #ccc;">
+    Heavenly Father, I come to You feeling empty, tired, and overwhelmed. Sometimes I can’t see beyond the pain, but I choose to believe You are still near. Remind me of Your promises. Breathe Your life into my dry bones. Restore hope in my heart and help me hold on to Your truth. In Jesus’ name, Amen.
+  </blockquote>
+
+  <h3>You’re Not Alone — Let’s Talk</h3>
+  <p>
+    Have you ever felt this way? Are you struggling with something you can’t explain to anyone else? <strong>You are not alone.</strong> I invite you to leave a comment or send a message — even just a few words. Let this be a space where we lift each other up.
+  </p>
+
+  <p>
+    If this message helped you, please <strong>share it</strong>. You never know who else is silently crying out for hope right now. Let’s spread the light together. 💛
+  </p>
+</div>
 
     <p><strong>Next Post:</strong> We’ll explore why God allows Satan to operate—and what it reveals about God’s justice, love, and final victory.</p>
-  </div>
+ <a class="button" href="/IfGodLovesUsWhyDoesHeAllowSatanToBringUsSuffering.html> Read Next Post </a> </div>
  <h3 style="text-align:center; font-family: Arial, sans-serif; margin-bottom: 12px;">
   Share this message
 </h3>
@@ -111,6 +145,31 @@
 
 </div>
   </div>
+  <form name="comment" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html" style="max-width: 600px; margin: 2rem auto; padding: 1.5rem; background-color: #f9f9f9; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+    <input type="hidden" name="form-name" value="comment">
+   <p hidden>
+    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+  </p>
+  <h3 style="text-align:center;">💬 Leave a Comment or Prayer Request</h3>
+
+  <p>
+    <label for="name">Your Name:<br>
+      <input type="text" name="name" id="name" required style="width: 100%; padding: 8px; margin-top: 4px; border: 1px solid #ccc; border-radius: 6px;">
+    </label>
+  </p>
+
+  <p>
+    <label for="message">Your Message:<br>
+      <textarea name="message" id="message" rows="5" required style="width: 100%; padding: 8px; margin-top: 4px; border: 1px solid #ccc; border-radius: 6px;"></textarea>
+    </label>
+  </p>
+
+  <p style="text-align:center;">
+    <button type="submit" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 8px; cursor: pointer;">
+      Send
+    </button>
+  </p>
+</form>
 <script>
   const pageUrl = encodeURIComponent(window.location.href);
   const message = encodeURIComponent("Check out this inspiring blog post: ");
