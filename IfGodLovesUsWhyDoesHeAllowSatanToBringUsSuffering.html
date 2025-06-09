@@ -51,6 +51,20 @@
       font-size: 0.9rem;
       margin-top: 3rem;
     }
+       .button {
+      display: inline-block;
+      padding: 0.5rem 1.2rem;
+      margin-top: 1rem;
+      background-color: #384d91;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      
+    }
+    .button:hover {
+      background-color: #2c3b73;
+    }
   </style>
 </head>
 <body>
@@ -78,9 +92,29 @@
 
     <h2>The Final Victory</h2>
     <p>Satan’s time is limited. God’s victory is eternal. One day, all suffering will end and justice will be done. Until then, hold on. The pain may be loud, but God's promise is louder.</p>
+<div style="margin-top: 2rem;">
+  <h2>Final Thoughts</h2>
+  <p>
+    Suffering can shake our hearts and test our faith — but even in the darkest valleys, God remains faithful. He does not abandon us. Rather, He walks with us, uses our pain for growth, and ultimately leads us into His glory. While we may not always understand every "why," we can trust the One who holds the future.
+  </p>
+
+  <h3>Let Us Pray:</h3>
+  <blockquote style="font-style: italic; background-color: #f9f9f9; padding: 1rem; border-left: 4px solid #ccc;">
+    Dear Heavenly Father, I may not always understand the pain I go through, but I trust that You are with me in every storm. Strengthen my faith when I feel weak. Help me to fix my eyes on You and to hold on to Your promises. Use even my suffering to draw me closer to You. In Jesus’ name, Amen.
+  </blockquote>
+
+  <h3>Let’s Reflect Together:</h3>
+  <p>
+    Have you ever gone through a season of suffering that challenged your faith? What helped you hold on? I invite you to <strong>share your experience or a prayer request in the comments</strong> — your story might be the encouragement someone else needs today.
+  </p>
+
+  <p>
+    If this message helped you, please <strong>share it with someone you care about</strong> or post it to your social media. Let’s spread truth and comfort in a hurting world. ✝️💬
+  </p>
+</div>
 
     <p><strong>Next Post:</strong> We’ll answer a bold question: Is God even real, or just a religious idea we made up?</p>
-  </div>
+  <a class="button" href="/IsGodJustMyth.html"> Read Next Post </a> </div>
  <h3 style="text-align:center; font-family: Arial, sans-serif; margin-bottom: 12px;">
   Share this message
 </h3>
@@ -110,6 +144,31 @@
 
 </div>
   </div>
+  <form name="comment" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html" style="max-width: 600px; margin: 2rem auto; padding: 1.5rem; background-color: #f9f9f9; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+    <input type="hidden" name="form-name" value="comment">
+   <p hidden>
+    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+  </p>
+  <h3 style="text-align:center;">💬 Leave a Comment or Prayer Request</h3>
+
+  <p>
+    <label for="name">Your Name:<br>
+      <input type="text" name="name" id="name" required style="width: 100%; padding: 8px; margin-top: 4px; border: 1px solid #ccc; border-radius: 6px;">
+    </label>
+  </p>
+
+  <p>
+    <label for="message">Your Message:<br>
+      <textarea name="message" id="message" rows="5" required style="width: 100%; padding: 8px; margin-top: 4px; border: 1px solid #ccc; border-radius: 6px;"></textarea>
+    </label>
+  </p>
+
+  <p style="text-align:center;">
+    <button type="submit" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 8px; cursor: pointer;">
+      Send
+    </button>
+  </p>
+</form>
 <script>
   const pageUrl = encodeURIComponent(window.location.href);
   const message = encodeURIComponent("Check out this inspiring blog post: ");
