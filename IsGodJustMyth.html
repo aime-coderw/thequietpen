@@ -51,6 +51,20 @@
       font-size: 0.9rem;
       margin-top: 3rem;
     }
+        .button {
+      display: inline-block;
+      padding: 0.5rem 1.2rem;
+      margin-top: 1rem;
+      background-color: #384d91;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      
+    }
+    .button:hover {
+      background-color: #2c3b73;
+    }
   </style>
 </head>
 <body>
@@ -78,9 +92,29 @@
 
     <h2>Faith That Thinks</h2>
     <p>Faith isn’t blind. It’s built on truth. When we doubt, we’re not sinning—we’re being invited to seek answers. And when we truly seek, we find that Jesus isn’t hiding. He’s waiting.</p>
+<div style="margin-top: 2rem;">
+  <h2>Final Reflection</h2>
+  <p>
+    If you've ever wondered whether God is just a story or a real presence, you're not alone. Many have asked the same question — but countless lives have also been transformed by encountering the living God. He’s not just a theory or legend; He is near, present, and willing to reveal Himself to every sincere heart.
+  </p>
+
+  <h3>Let’s Pray:</h3>
+  <blockquote style="font-style: italic; background-color: #f9f9f9; padding: 1rem; border-left: 4px solid #ccc;">
+    God of truth, if You are real, reveal Yourself to me. Open my heart and mind to know You—not through religion alone, but through relationship. Remove every doubt and draw me near. Help me to walk in the light of Your truth, and not be misled by fear, pain, or human misunderstanding. In Jesus’ name, Amen.
+  </blockquote>
+
+  <h3>Let’s Talk:</h3>
+  <p>
+    Have you ever questioned God's reality? Or maybe you've had moments when His presence felt undeniable. I invite you to <strong>share your story, thoughts, or questions in the comments</strong>. This is a space where your journey matters.
+  </p>
+
+  <p>
+    If this post challenged or encouraged you, please <strong>share it with someone who might be struggling with the same questions</strong>. Together, we seek the truth—and the truth will set us free. 🙏
+  </p>
+</div>
 
     <p><strong>Next Post:</strong> Let’s talk about the hard stuff: if God is love, why do we see Him destroy cities like Sodom or flood the whole world?</p>
-  </div>
+<a class="button" href="/DoesGodLoveToDestroy.html"> Read Next Post </a>  </div>
  <h3 style="text-align:center; font-family: Arial, sans-serif; margin-bottom: 12px;">
   Share this message
 </h3>
@@ -110,6 +144,31 @@
 
 </div>
   </div>
+  <form name="comment" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html" style="max-width: 600px; margin: 2rem auto; padding: 1.5rem; background-color: #f9f9f9; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+    <input type="hidden" name="form-name" value="comment">
+   <p hidden>
+    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+  </p>
+  <h3 style="text-align:center;">💬 Leave a Comment or Prayer Request</h3>
+
+  <p>
+    <label for="name">Your Name:<br>
+      <input type="text" name="name" id="name" required style="width: 100%; padding: 8px; margin-top: 4px; border: 1px solid #ccc; border-radius: 6px;">
+    </label>
+  </p>
+
+  <p>
+    <label for="message">Your Message:<br>
+      <textarea name="message" id="message" rows="5" required style="width: 100%; padding: 8px; margin-top: 4px; border: 1px solid #ccc; border-radius: 6px;"></textarea>
+    </label>
+  </p>
+
+  <p style="text-align:center;">
+    <button type="submit" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 8px; cursor: pointer;">
+      Send
+    </button>
+  </p>
+</form>
 <script>
   const pageUrl = encodeURIComponent(window.location.href);
   const message = encodeURIComponent("Check out this inspiring blog post: ");
