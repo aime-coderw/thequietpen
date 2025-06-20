@@ -42,6 +42,50 @@
       font-size: 0.9rem;
       margin-top: 3rem;
     }
+     .newsletter {
+      text-align: center;
+      padding: 2.5rem 1rem;
+      margin: 3rem auto;
+      background: #eef2ff;
+      border-radius: 10px;
+      max-width: 700px;
+    }
+    .newsletter h2 {
+      color: #384d91;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .newsletter p {
+      font-size: 1rem;
+      margin-bottom: 1.2rem;
+      color: #444;
+    }
+    .newsletter form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+    .newsletter input[type="email"] {
+      padding: 0.7rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      width: 80%;
+      max-width: 400px;
+    }
+    .newsletter button {
+      padding: 0.7rem 1.5rem;
+      background-color: #384d91;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .newsletter button:hover {
+      background-color: #2e3a75;
+    }
   </style>
 </head>
 <body>
@@ -120,7 +164,14 @@
       <a href="CanIBreakFreeFromWhatHasEnslavedMe1.html" class="read-more">Read More</a>
     </div>
   </div>
-
+ <section class="newsletter">
+    <h2>📬 Subscribe to The Quiet Pen</h2>
+    <p>Receive new posts, spiritual encouragement, and updates directly to your inbox.</p>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="email" name="email" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
   <footer>
     <p>&copy; 2025 The Quiet Pen | Written to Glorify God</p>
   </footer>
