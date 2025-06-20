@@ -88,6 +88,75 @@
     .button:hover {
       background-color: #2c3b73;
     }
+    .container { max-width: 1000px; margin: 2rem auto; padding: 1rem; }
+    .series-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3 { margin-top: 0; color: #384d91; font-size: 1.1rem; }
+    .card p { font-size: 0.95rem; color: #555; }
+    .card a {
+      display: inline-block;
+      margin-top: 0.75rem;
+      text-decoration: none;
+      color: white;
+      background: #384d91;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .card a:hover { background-color: #2e3a75; }
+     .newsletter {
+      text-align: center;
+      padding: 2.5rem 1rem;
+      margin: 3rem auto;
+      background: #eef2ff;
+      border-radius: 10px;
+      max-width: 700px;
+    }
+    .newsletter h2 {
+      color: #384d91;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .newsletter p {
+      font-size: 1rem;
+      margin-bottom: 1.2rem;
+      color: #444;
+    }
+    .newsletter form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+    .newsletter input[type="email"] {
+      padding: 0.7rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      width: 80%;
+      max-width: 400px;
+    }
+    .newsletter button {
+      padding: 0.7rem 1.5rem;
+      background-color: #384d91;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .newsletter button:hover {
+      background-color: #2e3a75;
+    }
   </style>
 </head>
 <body>
@@ -104,18 +173,34 @@
 
   <div class="container">
     <div class="featured">
-      <h2>🌿 Welcome to Your New Journey</h2>
+      <h2>🌿 Welcome to <strong>The Quiet Pen</strong></h2>
       <p>Here at <strong>The Quiet Pen</strong>, you’ll find Christian reflections, heartfelt testimonies, and powerful teachings rooted in truth. Whether you're seeking peace, struggling in silence, or simply searching for God’s voice—you’re home.</p>
-      <a class="button" href="blog.html">Read the Latest Posts</a>
     </div>
 
     <div class="featured">
-      <h2>🔥 Featured Post: "What Causes Depression?"</h2>
-      <p>Depression among youth is real and silent. This is my personal story of fighting hidden battles and how God began to restore me..</p>
-      <a class="button" href="WhatCausesDepression.html">Read Now</a>
+      <h2>🔥 Featured Series</h2>
+ <div class="container">
+    <div class="series-grid">
+      <div class="card">
+        <h3>Faith Based Questions </h3>
+        <p>🔍 Curious about God, faith, or life’s biggest questions?</p>
+<p>This series brings clarity through Scripture and grace-filled answers.</p>
+        <a href="blog.html">Read Post →</a>
+      </div>
+      <div class="card">
+      <h3>✝️From Sin to Surrender</h3>
+      <p>This serie include helpful steps that can help you in your full journey from struggling with sin to full peace and freedom in Christ's hands</p>
+      <a href="CanIBreakFreeFromWhatHasEnslavedMe1.html" class="read-more">Read More</a>
     </div>
   </div>
-
+ </div>
+<section class="newsletter">
+    <h2>📬 Subscribe to The Quiet Pen</h2>
+    <p>Receive new posts, spiritual encouragement, and updates directly to your inbox.</p>
+    <form action="https://formspree.io/f/mldnwboe" method="POST">
+      <input type="email" name="email" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+    </form>
   <footer>
     <p>&copy; 2025 The Quiet Pen | All rights reserved | Designed to glorify God</p>
   </footer>
